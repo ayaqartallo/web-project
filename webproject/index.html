@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visit Palestine..I'm your guide</title>
+    <link rel="stylesheet"; href="styles/mystyle.css">
+</head>
+<body style="overflow: scroll">
+<section class="sec1">
+      <table>
+          <tr>
+              <td><img src="imgs/unnamed.png" alt="" style="height: 60px; width: 200px"></td>
+              <td class="dropdown">
+                  <button class="dropbtn">Partical Information</button>
+                  <div class="dropdown-content">
+                      <a href="info.html"><img src="imgs/general-info-150x150.jpg" alt="">Brief Intro to Palestine</a>
+                      <a href="travel.html"><img src="imgs/getting-there-150x150.jpg" alt="">Travelling to Palestine</a>
+                      <a href="businesshours.html"><img src="imgs/business-hours-150x150.jpg" alt="">Business Hours and National Holidays</a>
+                      <a href="languages.html"><img src="imgs/languages-150x150.jpg" alt="">Climate</a>
+                      <a href="money.html"><img src="imgs/money-150x150.jpg" alt="">Languages</a>
+                      <a href="taxi.html"><img src="imgs/Taxi-150x150.jpg" alt="">Taxi & public transportation</a>
+                  </div>
+              </td>
+              <td class="dropdown">
+                  <button class="dropbtn">Where to go</button>
+                  <div class="dropdown-content">
+                      <a href="Jerusalem1.html"><img src="imgs/where-to-go-jerusalem-150x150.jpg" alt="">Jerusalem</a>
+                      <a href="bethlehem1.html"><img src="imgs/bethlehem_tour.jpg" alt="">Bethlehem</a>
+                      <a href="hebron1.html"><img src="imgs/where-to-go-hebron-150x150.jpg" alt="">Hebron</a>
+                      <a href="jericho1.html"><img src="imgs/where-to-go-jericho-150x150.jpg" alt="">Jericho</a>
+                      <a href="ramallah1.html"><img src="imgs/ramallah-introductions.jpg" alt="">Ramallah</a>
+                      <a href="nablus1.html"><img src="imgs/where-to-go-nablus-150x150.jpg" alt="">Nablus</a>
+                  </div>
+              </td>
+              <td class="dropdown">
+                  <button class="dropbtn">Tours</button>
+                  <div class="dropdown-content">
+                      <a href="Jerusalem.html"><img src="imgs/where-to-go-jerusalem-150x150.jpg" alt="">Jerusalem</a>
+                      <a href="bethlehem.html"><img src="imgs/bethlehem_tour.jpg" alt="">Bethlehem</a>
+                      <a href="hebron.html"><img src="imgs/where-to-go-hebron-150x150.jpg" alt="">Hebron</a>
+                      <a href="jericho.html"><img src="imgs/where-to-go-jericho-150x150.jpg" alt="">Jericho</a>
+                      <a href="ramallah.html"><img src="imgs/ramallah-introductions.jpg" alt="">Ramallah</a>
+                      <a href="nablus.html"><img src="imgs/where-to-go-nablus-150x150.jpg" alt="">Nablus</a>
+                  </div>
+              </td>
+
+              <td class="tho">
+                  <a href="mailto:webmaster@example.com" style="text-decoration: none; color: white">Contact Us</a>
+              </td>
+          </tr>
+      </table>
+</section>
+<section>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="imgs/jerusalem.jpg" style="width:100%; height: 300px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imgs/nablus.jpg" style="width:100%; height: 300px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imgs/haifa.jpg" style="width:100%; height: 300px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imgs/jerico.jpg" style="width:100%; height: 300px">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+<table style="padding-top: 50px;padding-left: 200px">
+    <tr>
+        <td>
+            <div class="dd">
+                <button class="bb" onclick=""><i class='fas fa-shopping-cart'></i></button>
+                <p class="para">Weekly Scheduled Tours</p>
+                <figure>
+                    <img src="imgs/Our-City-test-300x232.jpg" alt="" style="width: 270px">
+                    <figcaption class="fc">Over 25 weekly scheduled day tours <br> across Palestine. Join a scheduled tour <br> or book your own private tour. </figcaption>
+                </figure>
+            </div>
+        </td>
+        <td>
+            <div class="dd">
+                <button class="bb" onclick=""><i class='fas fa-shopping-cart'></i></button>
+                <p class="para">Palestine Marathon</p>
+                <figure>
+                    <img src="imgs/marathon1-237x300.jpg" alt="" style="width: 270px; height: 300px">
+                    <figcaption class="fc">Free Movement Palestine Marathon <br> aims at establishing running culture in <br> Palestine.</figcaption>
+                </figure>
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<section class="sec4">
+    <table>
+        <td><img src="imgs/unnamed.png" alt="" style="width: 250px ;height: 60px; padding-left: 80px; padding-top: 5px"></td>
+        <td><div class="footer">&copy Copyright 2021. All Rights Reserved. | Visit Palestine..I'm your guide </div> </td>
+    </table>
+</section>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+
+</script>
+
+
+</body>
+</html>
